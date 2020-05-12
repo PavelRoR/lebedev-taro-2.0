@@ -1,0 +1,93 @@
+#plan
+	padding 100px 0
+	background-color: #F8F2E4
+	position relative
+	z-index 30
+	.container
+		position relative
+		z-index 20
+	&:before
+		content: ''
+		display block
+		position absolute
+		margin: 0 auto
+		left 0
+		right 0
+		bottom: -300px
+		width 100%
+		max-width 1920px
+		height 594px
+		background-image url(../img/images/clouds.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		// z-index 0
+.day-wrapper
+	position relative
+	&-1
+		&:before
+			content: ''
+			display block
+			position absolute
+			background-image url(../img/images/day-1-img.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			left -55px
+			bottom -120px
+			width 313px
+			height 207px
+			z-index 0
+	&-3
+		&:before
+			content: ''
+			display block
+			position absolute
+			background-image url(../img/images/day-3-img.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			right -75px
+			top 300px
+			width 370px
+			height 455px
+			z-index 21
+.day
+	position relative
+	z-index: 20
+	border-radius: 10px;
+	box-shadow: 0px 1px 44.16px 1.84px rgba(0, 0, 0, 0.3);
+	background-color #fff
+	width 100%
+	max-width 380px
+	margin 0 auto 50px
+	padding 30px
+	min-height 1008px
+	// &-head
+	&-body
+		min-height 488px
+	&-title
+		// min-height 145px
+		font-size: 25px
+		font-family: TBk
+		text-transform uppercase
+		padding-bottom: 15px
+		border-bottom: 2px solid
+		small
+			display block
+			font-size: 20px
+			font-family: T
+			color #000000
+			text-transform: none
+		&-bonus
+			margin-top: 30px
+	&-list
+		margin 30px 0 0
+		list-style: none
+		&.day-ol-list
+			margin 15px 0 0
+			list-style: decimal
+			list-style-position: inside
+	&-3
+		.day-body
+			min-height 456px

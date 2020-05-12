@@ -1,0 +1,41 @@
+section#main
+	.container
+		include ../0.header.pug
+		.row
+			.col-md-6.col-sm-6
+				h1.main-title Каббалистическое
+					span Таро
+				h2.main-subtitle Получите один из самых результативных инструментов по моделированию реальности
+				p.main-info Даты проведения: 
+					span с 21 по 23 мая, 19:00 (мск)
+				p.main-info Автор курса: 
+					span Андрей Лебедев
+			.col-md-6.col-sm-6
+section#form
+	.container
+		.row
+			.col-md-7.col-sm-7
+				.laptop-wrapper
+					.video-wrapper.video-wrapper-main
+						iframe(src="https://youtube.com/embed/?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
+			.col-md-5.col-sm-5
+				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
+					h3.form-title Спешите записаться
+					.email-block.email-block-form
+						input( type="hidden" value="1" name="required_fields[email]")
+						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш email")
+					button(type="submit").button.button-form.button-form-main Записаться
+					.clearfix
+					p.alert-message
+					.checking
+						input(type="checkbox" id="check-1" checked).check
+						label(for="check-1").check-label Я согласен с 
+							a(href="#Politics").link-up условиями обработки
+							|  персональных данных по 152 - Ф3
+					div(style="display: none;")
+						#formTypeSpecificVars-1(style="display: none;")
+							input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
+						<!-- API код канала рекламы -->
+						input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
+						input(type="hidden" name="formId" value=formId)
+						input(type="hidden" name="formVc" value=formVc)

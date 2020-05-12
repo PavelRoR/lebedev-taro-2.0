@@ -1,0 +1,36 @@
+#lets
+	padding 140px 0 100px
+	background-color: #3B3C4A
+	background-image url(../img/backs/lets.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	z-index 28
+	&:before
+		@extend #plan:before
+	.container
+		@extend #plan .container
+.lets-item
+	padding 25px 30px
+	border-radius: 10px;
+	box-shadow: 0px 1px 18.2px 1.8px rgba(25, 25, 26, 0.004);
+	background-image: linear-gradient(to top, rgba(#19191a,.8),rgba(#736f6d,.8))
+	width 100%
+	max-width 400px
+	margin 0 auto 25px
+	min-height 327px
+	&:before
+		content: '+'
+		display inline-block
+		font-size: 30px
+		font-family: TBk
+		color #fff
+		border-radius: 5px
+		background-image: linear-gradient(to top, #28364d, #677baa)
+		padding 20px
+		margin-bottom: 30px
+	&-text
+		color #fff
+.button-lets
+	margin-top: 267px
