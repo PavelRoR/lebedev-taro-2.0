@@ -1,5 +1,5 @@
 -var path = '../'
--var head_title = 'Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса';
+-var head_title = 'Оставьте свои данные, чтоб скачать методичку';
 -var styles = path+'css/promo.min.css';
 -var fav_ico = path+'favicon.ico'
 -var fav_png = path+'favicon.png'
@@ -15,14 +15,14 @@ html(lang="ru")
 		section#main
 			.container
 				include pug/0.header.pug
-				h1.main-title Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса. Они помогут вам максимально эффективно работать на уроках
+				h1.main-title Оставьте свои данные, чтоб скачать методичку. Она поможет вам максимально эффективно работать на уроках
 				.main-container
 					form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
 						.inputrow
 							.inputblock
 								input(type="hidden" value="1" name="required_fields[phone_number]")
 								input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
-						button(type="submit").button.button-form Забрать тетради 
+						button(type="submit").button.button-form Забрать методичку 
 							br
 							| и завершить регистрацию
 						.clearfix
