@@ -1,0 +1,34 @@
+-var path = '../'
+-var head_url = 'https://lebedev.mastervision.su/kabbalistic-tarot/bonus/';
+-var head_title = 'Бонус';
+-var head_description = 'От Андрея Лебедева';
+-var styles = path+'css/bonus.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var footer_title = true
+
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/0.header.pug
+				.row
+					.col-md-6.col-sm-6
+						p.pre=head_description
+						h1.main-title=head_title
+						.laptop-wrapper.laptop-wrapper-main
+							.video-wrapper.video-wrapper-main
+								iframe(src="https://youtube.com/embed/?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
+		include pug/0.footer.pug
+		include pug/scripts/body_bottom_scripts
