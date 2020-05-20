@@ -1,0 +1,27 @@
+section#records
+	.container
+		+gt('general-title-black','Записи мастер-класса')
+		.row
+			.col-md-6.col-sm-6
+				h4.rec-title Запись занятия от 21.05.20
+				.video-wrapper.video-wrapper-rec
+					iframe(src!="https://player.vimeo.com/video/<?=$videos[0];?>" allowfullscreen)
+				p.rec-text(class!="<?=hides[0];?>") Занятие состоится 21.05.20, в 19:00 (мск)
+				p.rec-text(class!="<?=hides[0];?>") Запись появится здесь 22.05.20, после 13:00 (мск)
+			.col-md-6.col-sm-6
+				h4.rec-title Запись занятия от 22.05.20
+				.video-wrapper.video-wrapper-rec
+					iframe(src!="https://player.vimeo.com/video/<?=$videos[1];?>" allowfullscreen)
+				p.rec-text(class!="<?=hides[1];?>") Занятие состоится 22.05.20, в 19:00 (мск)
+				p.rec-text(class!="<?=hides[1];?>") Запись появится здесь 23.05.20, после 13:00 (мск)
+		.row
+			.col-md-6.col-sm-6.col-md-offset-3.col-sm-offset-3
+				h4.rec-title Запись занятия от 23.05.20
+				.video-wrapper.video-wrapper-rec
+					iframe(src!="https://player.vimeo.com/video/<?=$videos[2];?>" allowfullscreen)
+				p.rec-text(class!="<?=hides[2];?>") Занятие состоится 23.05.20, в 19:00 (мск)
+				p.rec-text(class!="<?=hides[2];?>") Запись появится здесь 24.05.20, после 13:00 (мск)
+		p.recs-text Записи мастер-класса будут в свободном доступе до 27.05.20
+		+gt('general-title-black ','Записей мастер-класса более нет в свободном доступе')
+		p.recs-text Но Вы можете приобрести их за 690р. и радоваться жизни вместе стем, кто уже смотрел
+		+b('button-rec','','Купить записи')

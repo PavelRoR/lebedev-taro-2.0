@@ -1,7 +1,7 @@
 -var path = '../'
 -var head_url = 'https://lebedev.mastervision.su/kabbalistic-tarot/bonus/';
--var head_title = 'Бонус';
--var head_description = 'От Андрея Лебедева';
+-var head_title = 'Астрологические соответствия карт Таро Тота (Алистер Кроули)';
+-var head_description = 'Бонус от Андрея Лебедева';
 -var styles = path+'css/bonus.min.css';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
@@ -26,9 +26,10 @@ html(lang="ru")
 				.row
 					.col-md-6
 						p.pre=head_description
-						h1.main-title=head_title
-						.laptop-wrapper.laptop-wrapper-main
-							.video-wrapper.video-wrapper-main
-								iframe(src="https://youtube.com/embed/?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
+						h1.main-title.main-title-bonus=head_title
+						a.button.button-bonus(href="https://drive.google.com/file/d/1PaPu9ROyzaVSMjQlo9YIKPsF-4Qwi-LD/view?usp=sharing" target="_blank") Скачать методичку
+						//- .laptop-wrapper.laptop-wrapper-main
+						//- 	.video-wrapper.video-wrapper-main
+						//- 		iframe(src="https://youtube.com/embed/?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
 		include pug/0.footer.pug
 		include pug/scripts/body_bottom_scripts

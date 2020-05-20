@@ -3,6 +3,8 @@
 	#last:before
 		max-width none
 		background-size: cover
+	#main:before
+		bottom -400px
 	#lets:before, #plan:before
 		max-width none
 		background-size: 100% 100%
@@ -27,7 +29,13 @@
 	#last:before, #lets:before, #plan:before
 		bottom -260px
 	#main:before
-		bottom: -600px
+		top 0
+	#main
+		padding-bottom: 100px
+	.main-subtitle
+		margin: 50px 0
+	#main:before
+		bottom: -500px
 @media screen and (max-width 1199px)
 	#main
 		background-position: top 20px right -370px

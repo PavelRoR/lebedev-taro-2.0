@@ -25,7 +25,7 @@
 		width 100%
 		max-width 1920px
 		height 1000px
-		background-image url(../img/images/clouds-main.png)
+		background-image url(../img/images/clouds.png)
 		background-repeat no-repeat
 		background-position: center
 		background-size contain
@@ -33,9 +33,12 @@
 		margin 0 auto
 		left 0
 		right 0
-		top 150px
+		bottom -450px
 	&.remind
 		background-image: none
+	&.ht
+		overflow visible
+		min-height 1px
 .pre
 	font-size: 20px
 	font-family: TL
@@ -48,18 +51,41 @@
 	a
 		color #677baa
 		display block
+	&-bonus
+		font-size: 24px
+		margin 20px 0 40px
 .main-subtitle
 	font-size: 24px
 	margin-top: 20px
 .laptop-wrapper-main
 	margin 40px auto 0
 	max-width 560px
+.main-info
+	font-family: TI
+	margin-top: 60px
+#feedback
+	width 100%
+	padding 150px 0 50px
+	background-color: #fff
+	min-height calc(100vh - 746px)
+#vk
+#fb
+	background-color: #fff
+	overflow hidden
+	border-radius: 15px
+	box-shadow: 0px 1px 44.16px 1.84px rgba(0,0,0,0.3)
+
 @import 'base/0.footer'
 
 @media screen and (min-width 1900px)
 	#main:before
 		max-width none
 		background-size: cover
+	#main:before
+		max-width none
+		background-size: cover
+	#feedback
+		padding-top: 300px
 @media screen and (min-width 2295px)
 	body
 		font-size: 20px
@@ -68,8 +94,12 @@
 	header
 		margin-bottom: 100px
 @media screen and (max-width 1199px)
+	#main
+		background-position: top 20px right -300px
 	#main:before
 		top 200px
+	#main.ht:before
+		top auto
 @media screen and (max-width 991px)
 		#main
 			background-image: none
@@ -95,6 +125,8 @@
 		display inline-block
 	.main-title
 		font-size: 28px
+	.main-title-bonus
+		font-size: 24px
 	.laptop-wrapper-main
 		margin-top: 20px
 	.laptop-wrapper:before
@@ -105,6 +137,10 @@
 	.video-wrapper iframe, .video-wrapper img
 		width 85%
 		margin 0 auto
+	#feedback
+		padding 100px 0 40px
+	#vk
+		margin-bottom: 25px
 	footer
 		padding 15px 0
 		font-size: 12px
@@ -117,17 +153,30 @@
 		font-size: 18px
 	.main-title
 		font-size: 26px
+	.main-title-bonus
+		font-size: 22px
+		margin 10px 0 20px
 	.main-subtitle
 		font-size: 20px
 		margin-top: 10px
 	.contact
 		font-size: 14px
+	.general-title
+		font-size: 24px
+		margin-bottom 30px
+		line-height: 1.2
 @media screen and (max-width 385px)
 	#main
 		padding 0 0 60px
 	.main-title
 		font-size: 22px
+	.main-title-bonus
+		font-size: 20px
 	.laptop-wrapper-main
 		margin-top: 10px
 	.remind-main-title
 		font-size: 20px
+	#feedback
+		padding 50px 0 30px
+	.general-title
+		font-size: 22px

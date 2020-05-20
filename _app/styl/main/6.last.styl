@@ -14,8 +14,20 @@
 		position relative
 		z-index 20
 	&:before
-		@extend #plan:before
+		content: ''
+		display block
+		position absolute
+		margin: 0 auto
+		left 0
+		right 0
 		bottom: -260px
+		width 100%
+		max-width 1920px
+		height 594px
+		background-image url(../img/images/clouds.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
 .last-title
 	font-size: 50px
 	font-family: TBk

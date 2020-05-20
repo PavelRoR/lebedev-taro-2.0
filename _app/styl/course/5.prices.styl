@@ -1,0 +1,116 @@
+#prices
+	padding 140px 0 100px
+	background-color: #3B3C4A
+	background-image url(../img/backs/lets.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	z-index 28
+	&:before
+		content: ''
+		display block
+		position absolute
+		margin: 0 auto
+		left 0
+		right 0
+		bottom: -300px
+		width 100%
+		max-width 1920px
+		height 594px
+		background-image url(../img/images/clouds.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+	.container
+		position relative
+		z-index 20
+.packet
+	padding 25px 30px
+	border-radius: 10px;
+	box-shadow: 0px 1px 18.2px 1.8px rgba(25, 25, 26, 0.004);
+	background-image: linear-gradient(to top, rgba(#19191a,.8),rgba(#736f6d,.8))
+	width 100%
+	max-width 300px
+	margin 0 auto 25px
+	text-align center
+	color #fff
+	&-head
+		&-title
+			font-size: 24px
+			font-family: TB
+			font-weight: bold
+			text-transform uppercase
+			small
+				display block
+				text-transform none
+				font-family: T
+				font-weight: normal
+.more-up
+	color:  #fff
+	display inline-block
+	border-bottom: 2px dotted
+	font-family: TI
+	font-style: italic
+	transition: all .3s ease
+	margin-bottom: 20px
+	&:focus
+		color #fff
+	&:hover
+		border-bottom-color: transparent
+		color #fff
+.cost
+	font-size: 26px
+	font-family: TB
+	margin-bottom: 20px
+	line-height: 1.2
+	span
+		text-transform uppercase
+		display block
+		font-size: 28px
+		font-family: TBk
+		font-weight: 900
+	&-full
+			span
+				text-decoration line-through
+				&.unboken
+					text-decoration none
+	&-sale
+		color red
+	&-today
+		color: lime
+		margin-bottom: 25px
+.prepayment
+	text-align center
+	&-title
+		text-transform uppercase
+		color red
+		font-size: 30px
+		font-family: TBk
+		font-weight: 900
+	&-text
+		font-size: 20px
+		font-family: TB
+		font-weight: bold
+		margin 10px 0 20px
+		color #fff
+.timer-title
+	text-transform uppercase
+	color red
+	font-size: 28px
+	font-family: TBk
+	font-weight: 900
+	text-align center
+	margin-top: 30px
+.flip-clock-wrapper
+	width: 100%
+	max-width 460px
+	margin-top: 30px
+.flip-clock-divider .flip-clock-label
+	color #fff
+.flip-clock-dot
+	background-color: #4d67ac
+.flip-clock-wrapper ul li a div div.inn
+	color: #fff
+	background-color: #4d67ac
+	text-shadow: 2px 2px 2px rgba(#022a37,.6);
