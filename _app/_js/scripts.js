@@ -11,22 +11,23 @@ $(document).ready(function () {
             switch_text = $('.switch-text'),
             currDate = new Date(),
             startDate = new Array(
-                new Date("April 21 2020 18:30 UTC+3"),
-                new Date("April 22 2020 18:30 UTC+3"),
-                new Date("April 23 2020 18:30 UTC+3")),
+                new Date("May 21 2020 18:30 UTC+3"),
+                new Date("May 22 2020 18:30 UTC+3"),
+                new Date("May 23 2020 18:30 UTC+3")),
             endDate = new Array(
-                new Date("April 21 2020 21:00 UTC+3"),
-                new Date("April 22 2020 21:00 UTC+3"),
-                new Date("April 23 2020 21:00 UTC+3")),
+                new Date("May 21 2020 21:00 UTC+3"),
+                new Date("May 22 2020 21:00 UTC+3"),
+                new Date("May 23 2020 21:00 UTC+3")),
             rooms = new Array(
-                'https://pruffme.com/landing/u8937/tmp1580927819',
-                'https://pruffme.com/landing/u8937/tmp1580927819',
-                'https://pruffme.com/landing/u8937/tmp1580927819');
+                'https://start.bizon365.ru/room/18087/kabbalistic_tarot_d1',
+                'https://start.bizon365.ru/room/18087/kabbalistic_tarot_d2',
+                'https://start.bizon365.ru/room/18087/kabbalistic_tarot_d3');
 
         function roomSwitch() {
-            $('.form-main').addClass('form-main-switch');
-            switch_title.html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!').css('lineHeight', '1.2');
-            switch_text.removeClass('hide').html('<span class="hurryup">Скорее ЗАХОДИТЕ прямо СЕЙЧАС на вебинар!</span><br>Присоединяйтесь к интенсиву и окунитесь в мир практической философии! Познайте этот мир и себя в нём!');
+            switch_title.html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!').addClass('switch-title-up');
+            switch_text.removeClass('hide').html('<span class="hurryup">Скорее ЗАХОДИТЕ прямо СЕЙЧАС на вебинар!</span><br>Присоединяйтесь к мастер-классу и окунитесь в мир практической эзотерики!');
+            $('.form-main').addClass('switch-form');
+            $('#form').addClass('switched');
             button.text('Зайти!');
         }
         if ((currDate > startDate[0] && currDate < endDate[0]) || (currDate > startDate[1] && currDate < endDate[1]) || (currDate > startDate[2] && currDate < endDate[2])) {

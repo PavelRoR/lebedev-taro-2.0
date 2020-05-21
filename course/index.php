@@ -1,3 +1,5 @@
+<?php require_once('vars.php');?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -109,11 +111,13 @@
                   <h4 class="packet-head-title"><small>пакет</small>БАЗОВЫЙ</h4>
                 </div>
                 <div class="packet-body"><a class="more-up" href="#Modal-1">подробнее</a></div>
-                <div class="packet-footer"><?php if($now < $dates[2]){;?>
-                  <p class="cost cost-full">Стоимость:<span>16 900р.</span></p>
-                  <p class="cost cost-sale">Скидка:<span id="sale-1">3 000р.</span></p>
-                  <p class="cost cost-today">Стоимость сегодня:<span id="today-1">13 900р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4891&amp;clean=true&amp;lg=ru" target="_blank" id="link-1">Выбрать</a><?php } else {;?>
-                  <p class="cost cost-full hide">Стоимость:<span class="unbroken">16 900р.</span></p><a class="button hide" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4891&amp;clean=true&amp;lg=ru" target="_blank">Выбрать</a><?php };?>
+                <div class="packet-footer">
+                  <?php if($now < $dates[2]){;?>
+                    <p class="cost cost-full">Стоимость:<span>16 900р.</span></p>
+                    <p class="cost cost-sale">Скидка:<span id="sale-1"><?=$sale1;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-1"><?=$today1;?></span></p><a class="button" href="<?=$link1;?>" target="_blank" id="link-1">Выбрать</a><?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">16 900р.</span></p><a class="button" href="<?=$link1;?>" target="_blank">Выбрать</a>
+                  <?php };?>
                 </div>
               </div>
             </div>
@@ -125,11 +129,14 @@
                 <div class="packet-body">
                   <p class="packet-body-text"></p><a class="more-up" href="#Modal-2">подробнее</a>
                 </div>
-                <div class="packet-footer"><?php if($now < $dates[2]){;?>
-                  <p class="cost cost-full">Стоимость:<span>30 900р.</span></p>
-                  <p class="cost cost-sale">Скидка:<span id="sale-2">6 000р.</span></p>
-                  <p class="cost cost-today">Стоимость сегодня:<span id="today-2">24 900р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4898&amp;clean=true&amp;lg=ru" target="_blank" id="link-2">Выбрать</a><?php } else {;?>
-                  <p class="cost cost-full hide">Стоимость:<span class="unbroken">30 900р.</span></p><a class="button hide" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4898&amp;clean=true&amp;lg=ru" target="_blank">Выбрать</a><?php };?>
+                <div class="packet-footer">
+                  <?php if($now < $dates[2]){;?>
+                    <p class="cost cost-full">Стоимость:<span>30 900р.</span></p>
+                    <p class="cost cost-sale">Скидка:<span id="sale-2"><?=$sale2;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-2"><?=$today2;?></span></p><a class="button" href="<?=$link2;?>" target="_blank" id="link-2">Выбрать</a>
+                  <?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">30 900р.</span></p><a class="button" href="<?=$link2;?>" target="_blank">Выбрать</a>
+                  <?php };?>
                 </div>
               </div>
             </div>
@@ -141,24 +148,29 @@
                 <div class="packet-body">
                   <p class="packet-body-text"></p><a class="more-up" href="#Modal-3">подробнее</a>
                 </div>
-                <div class="packet-footer"><?php if($now < $dates[2]){;?>
-                  <p class="cost cost-full">Стоимость:<span>45 900р.</span></p>
-                  <p class="cost cost-sale">Скидка:<span id="sale-3">9 000р.</span></p>
-                  <p class="cost cost-today">Стоимость сегодня:<span id="today-3">36 900р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4905&amp;clean=true&amp;lg=ru" target="_blank" id="link-3">Выбрать</a><?php } else {;?>
-                  <p class="cost cost-full hide">Стоимость:<span class="unbroken">45 900р.</span></p><a class="button hide" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4905&amp;clean=true&amp;lg=ru" target="_blank">Выбрать</a><?php };?>
+                <div class="packet-footer">
+                  <?php if($now < $dates[2]){;?>
+                    <p class="cost cost-full">Стоимость:<span>45 900р.</span></p>
+                    <p class="cost cost-sale">Скидка:<span id="sale-3"><?=$sale3;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-3"><?=$today3;?></span></p><a class="button" href="<?=$link3;?>" target="_blank" id="link-3">Выбрать</a>
+                  <?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">45 900р.</span></p><a class="button" href="<?=$link3;?>" target="_blank">Выбрать</a>
+                  <?php };?>
                 </div>
               </div>
             </div>
           </div>
-        </div><?php if($now < $dates[2]):?>
-        <div class="prepayment">
-          <h4 class="prepayment-title">Акция!</h4>
-          <p class="prepayment-text">Платите 1 000р., бонусом получаете <span id="prepayment-bonus">1 000р. </span><br/>На счет зачисляется <span id="prepayment-credited">2 000р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4912&amp;clean=true&amp;lg=ru" target="_blank" id="prepaymrnt-link">Оплатить 1 000р.</a>
         </div>
-        <div class="timer">
-          <h4 class="timer-title">Скидка уменьшится через:</h4>
-          <div class="clock"></div>
-        </div><?php endif;?>
+        <?php if($now < $dates[2]):?>
+          <div class="prepayment">
+            <h4 class="prepayment-title">Акция!</h4>
+            <p class="prepayment-text">Платите 1 000р., бонусом получаете <span id="prepayment-bonus">1 000р. </span><br/>На счет зачисляется <span id="prepayment-credited">2 000р.</span></p><a class="button" href="<?=$prepLink;?>" target="_blank" id="prepaymrnt-link">Оплатить 1 000р.</a>
+          </div>
+          <div class="timer">
+            <h4 class="timer-title">Скидка уменьшится через:</h4>
+            <div class="clock"></div>
+          </div>
+        <?php endif;?>
       </div>
     </section>
     <section id="author">
@@ -180,38 +192,41 @@
     </section>
     <section id="records">
       <div class="container">
-        <h3 class="general-title general-title-black">Записи мастер-класса</h3>
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <h4 class="rec-title">Запись занятия от 21.05.20</h4>
-            <div class="video-wrapper video-wrapper-rec">
-              <iframe src="https://player.vimeo.com/video/<?=$videos[0];?>" allowfullscreen="allowfullscreen"></iframe>
+        <?php if($now < $dates[3]){;?>
+          <h3 class="general-title general-title-black">Записи мастер-класса</h3>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <h4 class="rec-title">Запись занятия от 21.05.20</h4>
+              <div class="video-wrapper video-wrapper-rec">
+                <iframe src="https://player.vimeo.com/video/<?=$videos[0];?>" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <p class="rec-text <?=$hides[0];?>">Занятие состоится 21.05.20, в 19:00 (мск)</p>
+              <p class="rec-text <?=$hides[0];?>">Запись появится здесь 22.05.20, после 13:00 (мск)</p>
             </div>
-            <p class="rec-text <?=hides[0];?>">Занятие состоится 21.05.20, в 19:00 (мск)</p>
-            <p class="rec-text <?=hides[0];?>">Запись появится здесь 22.05.20, после 13:00 (мск)</p>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <h4 class="rec-title">Запись занятия от 22.05.20</h4>
-            <div class="video-wrapper video-wrapper-rec">
-              <iframe src="https://player.vimeo.com/video/<?=$videos[1];?>" allowfullscreen="allowfullscreen"></iframe>
+            <div class="col-md-6 col-sm-6">
+              <h4 class="rec-title">Запись занятия от 22.05.20</h4>
+              <div class="video-wrapper video-wrapper-rec">
+                <iframe src="https://player.vimeo.com/video/<?=$videos[1];?>" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <p class="rec-text <?=$hides[1];?>">Занятие состоится 22.05.20, в 19:00 (мск)</p>
+              <p class="rec-text <?=$hides[1];?>">Запись появится здесь 23.05.20, после 13:00 (мск)</p>
             </div>
-            <p class="rec-text <?=hides[1];?>">Занятие состоится 22.05.20, в 19:00 (мск)</p>
-            <p class="rec-text <?=hides[1];?>">Запись появится здесь 23.05.20, после 13:00 (мск)</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-            <h4 class="rec-title">Запись занятия от 23.05.20</h4>
-            <div class="video-wrapper video-wrapper-rec">
-              <iframe src="https://player.vimeo.com/video/<?=$videos[2];?>" allowfullscreen="allowfullscreen"></iframe>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+              <h4 class="rec-title">Запись занятия от 23.05.20</h4>
+              <div class="video-wrapper video-wrapper-rec">
+                <iframe src="https://player.vimeo.com/video/<?=$videos[2];?>" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <p class="rec-text <?=$hides[2];?>">Занятие состоится 23.05.20, в 19:00 (мск)</p>
+              <p class="rec-text <?=$hides[2];?>">Запись появится здесь 24.05.20, после 13:00 (мск)</p>
             </div>
-            <p class="rec-text <?=hides[2];?>">Занятие состоится 23.05.20, в 19:00 (мск)</p>
-            <p class="rec-text <?=hides[2];?>">Запись появится здесь 24.05.20, после 13:00 (мск)</p>
           </div>
-        </div>
-        <p class="recs-text">Записи мастер-класса будут в свободном доступе до 27.05.20</p>
-        <h3 class="general-title general-title-black ">Записей мастер-класса более нет в свободном доступе</h3>
-        <p class="recs-text">Но Вы можете приобрести их за 690р. и радоваться жизни вместе стем, кто уже смотрел</p><a class="button button-rec" href="">Купить записи</a>
+          <p class="recs-text">Записи мастер-класса будут в свободном доступе до 27.05.20</p>
+        <?php } else {;?>
+          <h3 class="general-title general-title-black">Записей мастер-класса более нет в свободном доступе</h3>
+          <p class="recs-text">Но Вы можете приобрести их за 690р. и радоваться жизни вместе стем, кто уже смотрел</p><a class="button button-rec" href="">Купить записи</a>
+        <?php };?>
       </div>
     </section>
     <section id="last">
@@ -628,7 +643,10 @@
         </div>
       </div>
     </div>
-    <script src="../js/course.min.js"></script><!-- AutoWebOffice: UTM or OpenStat Counter -->
+    <script src="../js/course.min.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script src="//code.jivosite.com/widget.js" data-jv-id="UPm98E8VpR" async="async"></script><!-- {/literal} END JIVOSITE CODE -->
+    <!-- AutoWebOffice: UTM or OpenStat Counter -->
     <script type="text/javascript">var url = "https://shop.mastervision.su/?r=api/utmopenstat";</script>
     <script type="text/javascript" src="https://shop.mastervision.su/js/utm_openstat.js" defer="defer"></script><!-- /AutoWebOffice: UTM or OpenStat Counter -->
   </body>

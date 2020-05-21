@@ -20,7 +20,8 @@ section#form
 						iframe(src="https://youtube.com/embed/afTwwDtN7Ik?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
 			.col-md-5.col-sm-5
 				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
-					h3.form-title Спешите записаться
+					h3.form-title.switch-title Спешите записаться
+					p.switch-text.hide
 					.email-block.email-block-form
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш email")
